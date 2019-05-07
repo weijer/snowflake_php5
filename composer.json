@@ -1,12 +1,12 @@
 {
-    "name": "yiranzai/snowflake",
+    "name": "weijer/snowflake",
     "type": "library",
     "description": "This package to generate 64 bit identifier, use snowflakes from Twitter.",
     "keywords": [
         "yiranzai",
         "snowflake"
     ],
-    "homepage": "https://github.com/yiranzai/snowflake",
+    "homepage": "https://github.com/weijer/snowflake_php5",
     "license": "MIT",
     "authors": [
         {

@@ -47,7 +47,7 @@ final class SnowFlake
      * @param int $workerID
      * @return int
      */
-    public static function next($dataCenterID = 0, $workerID = 0): int
+    public static function next($dataCenterID = 0, $workerID = 0)
     {
 
         $timestamp = self::generateTimestamp();
@@ -74,7 +74,7 @@ final class SnowFlake
      * @param $snowFlakeId
      * @return Node
      */
-    public static function analysis($snowFlakeId): Node
+    public static function analysis($snowFlakeId)
     {
         $Binary             = str_pad(decbin($snowFlakeId), self::LENGTH, '0', STR_PAD_LEFT);
         $node               = new Node();
@@ -97,7 +97,7 @@ final class SnowFlake
     /**
      * @return int
      */
-    private static function nextMillisecond(): int
+    private static function nextMillisecond()
     {
         $timestamp = self::generateTimestamp();
         while ($timestamp <= self::$lastTimestamp) {
@@ -109,7 +109,7 @@ final class SnowFlake
     /**
      * @return int
      */
-    private static function generateTimestamp(): int
+    private static function generateTimestamp()
     {
         return (int)floor(microtime(true) * 1000);
     }
@@ -121,7 +121,7 @@ final class SnowFlake
      * @param int $workerID
      * @return int
      */
-    public static function test($dataCenterID = 0, $workerID = 0): int
+    public static function test($dataCenterID = 0, $workerID = 0)
     {
         $timestamp = self::generateTimestamp();
 
