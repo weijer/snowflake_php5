@@ -1,5 +1,5 @@
 {
-    "name": "weijer/snowflake",
+    "name": "weijer/snowflake_php5",
     "type": "library",
     "description": "This package to generate 64 bit identifier, use snowflakes from Twitter.",
     "keywords": [
